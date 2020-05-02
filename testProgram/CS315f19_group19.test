@@ -1,0 +1,149 @@
+# Programs should start with main#
+
+main {
+	#URL's are being checked to ensure starting with https:// #
+
+	firstConnection = connect("https://iotserver.xxx.ooo.com");
+
+	string urlAsString = "https://iotserver.xxx.ooo.com";
+	println("Connected to " , urlAsString);
+
+	int temperatureValue = read(temperature);
+	int humidityValue = read(humidity);
+	int airPressureValue = read(airPressure);
+	int airQualityValue = read(airQuality);
+	int lightRate = read(light);
+	int heatValue =read(heat);
+	int soundValue = read(sound, 6000);
+	int timeValue = read(time);
+
+	println("Hello, World");
+	double x = 4.1;
+
+	int y = 10;
+	int a = 3 * 5;
+
+
+	# Normally, it is not allowed to assign a rational value to int. However, typecasting is possible from double to int#
+	int castDemo = (int)(5.5);
+
+	string stringTest = "test";
+	void funct() {
+		y = y + 1;
+		print("test");
+		println("test");
+	}
+	
+	funct();
+	
+	double getNumber(int y = 5, int a) {
+		
+		a = a * 3;
+		y = y * (a - 7);
+		return (4.0 + y) / a;
+	}
+	int connectionValue = getNumber(y, a);
+	
+	secondConnection = connect("https://l.io");
+	connectionValue = receive(secondConnection) + 3;
+
+	if( (connectionValue < 20 or connectionValue > 10) and ( y >= 18))
+	{
+		send(5, connection);
+	}
+
+	switch[0] = ON;
+
+	#comment#
+	#there are 10 switches starting from 0 to 9#
+	if(heatValue < 30) {
+		switch[0] = ON;
+		switch[9] = OFF;
+	}
+	else {
+		switch[0] = OFF;
+		switch[9] = ON;
+	}
+
+	int receivedNumber = receive(connection);
+
+	int total;
+	while(receivedNumber > 0) {
+		total = total + receivedNumber; 
+	}
+
+	for(int i = 0;i < 9;i = i+1) {
+		switch[i] = ON;
+	}
+	
+	#function#
+	string airQualityCheck() {
+		string result;
+		if(airQualityValue <= 20) {
+			result= "Air quality is low";
+		}
+		else  { 
+			if(airQualityValue  < 50) {
+				result = "Air quality is average";
+			}
+			else {
+				result = "Air quality is great";
+			}
+		}
+		return result;
+	}
+
+	print( airQualityCheck(airQualityValue));
+
+	#Getting from the user#
+	string age = get();
+	print( age);
+
+	double i = 3.5;
+	while(( i <= 10 and i == 1.5 ) or not(i  != 7.5)  ) {
+		int x8a = 3;
+		string myString = "17helloWorld";
+		if( i <= 5) {
+			x8a= x8a * 3 + ( 1/3 * x8a);
+			x8a = x8a / 4 + 0.03;
+			i = i + 1;
+		}
+		i = i+1;
+	}
+
+	# This is a 
+	comment #
+
+	int func1(int a = 5 #Functions can have default values#, double b, string c) {
+		a = a - 1;
+		b = a * 3;
+		return a;
+	}
+
+	void funcWithWhile(int i) {
+		if (5 < 10) {
+			while ( i > 0) {
+				i = i - 1;
+			}
+		}
+	}
+
+	if((y == x) or (x == 9)) {
+		switch[x] = ON;
+		switch[8-x] = OFF;
+		print("inside if");
+	}
+	else {
+		switch[x] = OFF;
+		println("inside else");
+	}
+
+	funcWithWhile(9);
+	int a = func1(x, 5.4, "ex");
+
+	string func2(string input) {
+		string y = get();
+		return "trains";
+	}
+
+}
