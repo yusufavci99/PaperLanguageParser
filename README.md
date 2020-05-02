@@ -5,7 +5,7 @@ Programmin Languages Project. Checks whether or not a program text is a valid Pa
 ## Deatailed Report
 
 For detailed info please check the project report.
-https://github.com/yusufavci99/PaperLanguageParser/blob/master/documentation/CS315f19_group19Report.pdf
+* https://github.com/yusufavci99/PaperLanguageParser/blob/master/documentation/CS315f19_group19Report.pdf
 
 ## Dependecnies
 
