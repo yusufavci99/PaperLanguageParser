@@ -1,5 +1,11 @@
 # PaperLanguageParser
+
 Programmin Languages Project. Checks whether or not a program text is a valid Paper program code.
+
+## Deatailed Report
+
+For detailed info please check the project report.
+https://github.com/yusufavci99/PaperLanguageParser/blob/master/documentation/CS315f19_group19Report.pdf
 
 ## Dependecnies
 
@@ -11,15 +17,14 @@ Can be installed with: sudo apt-get install bison flex
 
 * Create the parser by using the makefile in src.
 * Parse any file with "./pareser < 'filename'"
+* There is an example program in testProgram folder.
 * The parser says the program is valid or there is a syntax error on a given line.
-
-## Deatailed Report
 
 ## Authors
 
-Çerağ Oğuztüzün
-Mehmet Bora Kurucu
-Yusuf Avcı
+*Çerağ Oğuztüzün
+*Mehmet Bora Kurucu
+*Yusuf Avcı
 
 
 
