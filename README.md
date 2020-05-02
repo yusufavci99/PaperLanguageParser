@@ -10,7 +10,7 @@ For detailed info please check the project report.
 ## Dependecnies
 
 * Linux
-* Lex & Yacc.
+* Lex & Yacc
 Can be installed with: sudo apt-get install bison flex
 
 ## Usage Guide
