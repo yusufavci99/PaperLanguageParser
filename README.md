@@ -22,9 +22,9 @@ Can be installed with: sudo apt-get install bison flex
 
 ## Authors
 
-*Çerağ Oğuztüzün
-*Mehmet Bora Kurucu
-*Yusuf Avcı
+* Çerağ Oğuztüzün
+* Mehmet Bora Kurucu
+* Yusuf Avcı
 
 
 
